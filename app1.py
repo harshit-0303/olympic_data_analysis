@@ -168,19 +168,19 @@ if user_menu == "Athlete-wise Analysis":
 
     male_df = athlete_df[athlete_df["Sex"] == "M"].groupby("Year")["Name"].count().reset_index()
     female_df = athlete_df[athlete_df["Sex"] == "F"].groupby("Year")["Name"].count().reset_index()
-    participation = male_df.merge(female_df, on='Year', how='left', suffixes=('_Male', '_Female'))
+    participation = male_df.merge(female_df, on='Year', how='left')
     participation.fillna(0, inplace=True)
-    participation.rename(columns={"Name_Male": "Male", "Name_Female": "Female"}).astype(int)
+    participation= participation.rename(columns={"Name_x": "Male", "Name_y": "Female"}).astype(int)
 
     fig = px.line(
         participation,
         x="Year",
-        y=["Name_Male", "Name_Female"],
+        y=["Male", "Female"],
         labels={"value": "Number of Athletes", "Year": "Olympic Year", "variable": "Gender"},
         markers=True,
         title="Male vs Female Participation Over the Years"
     )
-    fig.show()
+    st.plotly_chart(fig)
 
 
 
