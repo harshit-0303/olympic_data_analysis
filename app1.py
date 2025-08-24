@@ -171,14 +171,14 @@ if user_menu == "Athlete-wise Analysis":
     participation = male_df.merge(female_df, on='Year', how='left')
     participation.fillna(0, inplace=True)
     participation= participation.rename(columns={"Name_x": "Male", "Name_y": "Female"}).astype(int)
-
+    st.title("Male vs Female Participation Over the Years")
     fig = px.line(
         participation,
         x="Year",
         y=["Male", "Female"],
         labels={"value": "Number of Athletes", "Year": "Olympic Year", "variable": "Gender"},
         markers=True,
-        title="Male vs Female Participation Over the Years"
+
     )
     st.plotly_chart(fig)
 
