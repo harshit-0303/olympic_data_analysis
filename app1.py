@@ -166,6 +166,22 @@ if user_menu == "Athlete-wise Analysis":
     ax= sns.scatterplot(temp_df, x="Weight", y="Height", hue=temp_df["Medal"], style=temp_df["Sex"],s=90)
     st.pyplot(fig)
 
+    male_df = athlete_df[athlete_df["Sex"] == "M"].groupby("Year")["Name"].count().reset_index()
+    female_df = athlete_df[athlete_df["Sex"] == "F"].groupby("Year")["Name"].count().reset_index()
+    participation = male_df.merge(female_df, on='Year', how='left', suffixes=('_Male', '_Female'))
+    participation.fillna(0, inplace=True)
+    participation.rename(columns={"Name_Male": "Male", "Name_Female": "Female"}).astype(int)
+
+    fig = px.line(
+        participation,
+        x="Year",
+        y=["Name_Male", "Name_Female"],
+        labels={"value": "Number of Athletes", "Year": "Olympic Year", "variable": "Gender"},
+        markers=True,
+        title="Male vs Female Participation Over the Years"
+    )
+    fig.show()
+
 
 
 
