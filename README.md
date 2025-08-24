@@ -40,22 +40,19 @@ Matplotlib / Seaborn (supportive charts)
 
 📦 Installation & Usage
 
-## Clone the repository
+Clone the repository
 
 git clone https://github.com/harshit-0303/olympic_data_analysis.git
 cd olympic_data_analysis
 
-
-## Install dependencies
+Install dependencies
 
 pip install -r requirements.txt
 
-
-## Run the app
+Run the app
 
 streamlit run app1.py
 
-
-## The app will open in your browser at:
+The app will open in your browser at:
 
 http://localhost:8501
