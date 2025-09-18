@@ -5,7 +5,7 @@
 An interactive Olympic Games Data Analysis Dashboard built with Streamlit, Plotly, and Pandas.
 The app allows users to explore medal tallies, trends, and athlete statistics from the Olympic dataset in an intuitive way.
 
-🚀 Features
+## 🚀 Features
 
 The app provides four main sections accessible from the sidebar:
 
@@ -30,13 +30,14 @@ Distribution of athletes’ age vs medal type.
 Height vs Weight comparison for athletes by sport.  
 Male vs Female participation trend over the years.
 
-## 📊 Tech Stack: 
+## 📊 Tech Stack
 
-Python  
-Streamlit (UI)  
-Plotly (interactive visualizations)  
-Pandas / Numpy (data preprocessing & analysis)  
-Matplotlib / Seaborn (supportive charts)
+- 🐍 **Python** – Core programming language  
+- 🎨 **Streamlit** – Interactive UI framework  
+- 📈 **Plotly** – Interactive visualizations  
+- 📊 **Pandas / NumPy** – Data preprocessing & analysis  
+- 📉 **Matplotlib / Seaborn** – Supportive charts & static plots  
+
 
 ## 📦 Installation & Usage
 
