@@ -1,6 +1,6 @@
-# olympic_data_analysis
 
-## 🏅 Olympic Data Analysis
+
+# 🏅 Olympic Data Analysis
 
 An interactive Olympic Games Data Analysis Dashboard built with Streamlit, Plotly, and Pandas.
 The app allows users to explore medal tallies, trends, and athlete statistics from the Olympic dataset in an intuitive way.
@@ -40,19 +40,20 @@ Matplotlib / Seaborn (supportive charts)
 
 ## 📦 Installation & Usage
 
-### Clone the repository
+### 📥 Clone the Repository
 
-git clone https://github.com/harshit-0303/olympic_data_analysis.git  
+```bash
+git clone https://github.com/harshit-0303/olympic_data_analysis.git
 cd olympic_data_analysis
-
-### Install dependencies
-
+```
+### ⚙️ Install Dependencies
+```bash
 pip install -r requirements.txt
-
-### Run the app
-
+```
+### 🚀 Run the App
+```bash
 streamlit run app1.py
-
+```
 ### The app will open in your browser at:
 
 http://localhost:8501
