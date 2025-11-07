@@ -1,42 +1,40 @@
-
-
 # 🏅 Olympic Data Analysis
 
-An interactive Olympic Games Data Analysis Dashboard built with Streamlit, Plotly, and Pandas.
-The app allows users to explore medal tallies, trends, and athlete statistics from the Olympic dataset in an intuitive way.
+An interactive **Olympic Games Data Analysis Dashboard** built with **Streamlit**, **Plotly**, and **Pandas**.  
+This app enables users to explore **medal tallies, historical trends, and athlete statistics** from the Olympic dataset through a clean, visual, and interactive interface.
+
+---
 
 ## 🚀 Features
 
-The app provides four main sections accessible from the sidebar:
+The application provides four main analytical sections accessible from the sidebar:
 
-1️⃣ **Medal Tally**:
+### 🥇 1️⃣ Medal Tally  
+- View **Gold, Silver, and Bronze** counts for all countries.  
+- Filter by **year** and **nation** to identify top-performing countries across different Olympic editions.
 
-View medal counts (Gold, Silver, Bronze) for all countries.  
-Filter and explore which nations have dominated in different Olympic years.
+### 📈 2️⃣ Overall Analysis  
+- Get **key statistics** about the Olympics — total nations, events, sports, and athletes.  
+- Visualize **historical participation trends** through interactive line charts.
 
-2️⃣ **Overall Analysis**:
+### 🇮🇳 3️⃣ Country-wise Analysis  
+- Examine a specific country's **medal performance** across years.  
+- Discover the **top-performing athletes** from that nation.
 
-Key top statistics about the Olympics (total nations, sports, athletes, etc.).  
-Line charts to visualize historical trends in participation and events.
+### 🏃 4️⃣ Athlete-wise Analysis  
+- Study the relationship between **age** and **medal types**.  
+- Analyze **height vs. weight** distributions across sports.  
+- Track **male vs. female participation** trends over time.
 
-3️⃣ **Country-wise Analysis**:
+---
 
-Medal tally for a selected country across years.  
-Identify the top athletes from that country.
-
-4️⃣ **Athlete-wise Analysis**:
-
-Distribution of athletes’ age vs medal type.  
-Height vs Weight comparison for athletes by sport.  
-Male vs Female participation trend over the years.
-
-## 📊 Tech Stack
+## 🧰 Tech Stack
 
 - 🐍 **Python** – Core programming language  
-- 🎨 **Streamlit** – Interactive UI framework  
-- 📈 **Plotly** – Interactive visualizations  
-- 📊 **Pandas / NumPy** – Data preprocessing & analysis  
-- 📉 **Matplotlib / Seaborn** – Supportive charts & static plots  
+- 🎨 **Streamlit** – Interactive dashboard framework  
+- 📈 **Plotly** – Dynamic and interactive data visualizations  
+- 🧮 **Pandas / NumPy** – Data cleaning, transformation, and analysis  
+- 📉 **Matplotlib / Seaborn** – Supplementary visualizations 
 
 
 ## 📦 Installation & Usage
@@ -57,4 +55,42 @@ streamlit run app1.py
 ```
 ### The app will open in your browser at:
 
-http://localhost:8501
+http://localhost:8501  
+
+## 💡 Future Enhancements
+
+###🧠 Add AI-powered medal prediction based on historical trends  
+
+###🌍 Integrate world map visualizations for medal distribution  
+
+###⏱️ Enable real-time updates for upcoming Olympic events  
+
+## 📊 Dashboards  
+
+<p align="center">
+  <b>🏅 Overall Olympic Analysis Dashboard</b>
+</p>
+
+<p align="center">
+  <img src="https://ik.imagekit.io/vtwmik0pw/Screenshot%202025-08-24%20221236.png?updatedAt=1762525656930" 
+       alt="Overall Olympic Analysis Dashboard" width="800"/>
+</p>
+
+<p align="center">
+  <b>📈 Top Athletes for India</b>
+</p>
+
+<p align="center">
+  <img src="https://ik.imagekit.io/vtwmik0pw/Screenshot%202025-08-24%20221331.png?updatedAt=1762525656854" 
+       alt="Country-wise Performance Dashboard" width="800"/>
+</p>
+
+<p align="center">
+  <b>🏃 Distribution of Age wrt Medal</b>
+</p>
+
+<p align="center">
+  <img src="https://ik.imagekit.io/vtwmik0pw/Screenshot%202025-08-24%20221213.png?updatedAt=1762525656877" 
+       alt="Athlete-wise Analysis Dashboard" width="800"/>
+</p>
+
